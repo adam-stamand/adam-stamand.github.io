@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <body>
+      
+    <div id="fullpage" class="fullpage-base">
+      {{content}}
+    </div>
+
+    {% include header.html %}
+    
+
+    <script type="text/javascript" src="../dist/fullpage.js"></script>
+    <script type="text/javascript" src="../dist/example.js"></script>
+    
+    <script type="text/javascript">
+      var myFullpage = new fullpage('#fullpage', {
+          menu: '#menu',
+          anchors: ['Statement'],
+          sectionsColor: ['#00000000'],
+          autoScrolling: false,
+          licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
+          paddingBottom: 0,
+          paddingTop: 0
+      });
+    </script> 
+  </body>
+</html>
+
+
+  {% comment %}
+    
+  <main  aria-label="Content">
+      
+    
+      
+    {{ content }}
+      {% comment %}
+      {% endcomment %}
+    </main>
+    {% include header.html %}
+    {% include javascripts.html %}
+  {% include analytics.html %}
+  {% endcomment %}

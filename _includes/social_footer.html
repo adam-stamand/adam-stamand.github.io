@@ -1,0 +1,24 @@
+
+<ul class="social_footer">
+  {% if site.gmail_url %}
+  <li><a href="{{ site.gmail_url }}" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+  {% else %}
+  <li><a  id="success" onclick="copyToClipboard('adam.stamand@gmail.com')" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+  {% endif %}
+  {% if site.github_url %}
+  <li><a href="{{ site.github_url }}" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+  {% else %}
+  <li><a href="#" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>      
+  {% endif %}
+  {% if site.stack-overflow_url %}
+  <li><a href="{{ site.stack-overflow_url }}" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a></li>
+  {% else %}
+  <li><a href="#" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a></li>
+  {% endif %}
+  {% if site.linkedin_url %}
+  <li><a href="{{ site.linkedin_url }}" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+  {% else %}
+  <li><a href="#" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+  {% endif %}
+
+</ul>
