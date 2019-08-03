@@ -1,0 +1,47 @@
+
+<script src="{{site.baseurl}}/assets/js/jquery-3.2.1.min.js"></script>
+<script src="{{site.baseurl}}/assets/js/jquery.vide.min.js"></script>
+<script src="{{site.baseurl}}/assets/js/jquery.js"></script>
+<script src="{{site.baseurl}}/assets/js/custom.js"></script>
+<script src="{{site.baseurl}}/assets/js/myjs.js"></script>
+<script type="text/javascript" src="{{site.baseurl}}/dist/example.js"></script>
+<script type="text/javascript" src="{{site.baseurl}}/dist/fullpage.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<script>
+
+          (function() {
+            var hamburgers = document.querySelectorAll(".hamburger");
+            var hamburger = {
+                navToggle: document.querySelector('.hamburger'),
+                nav: document.querySelector('.hamburger-menu'),
+
+                doToggle: function(e) {
+                    e.preventDefault();
+                    this.navToggle.classList.toggle('is-active');
+                    this.nav.classList.toggle('expanded');
+                }
+            };
+
+            hamburger.navToggle.addEventListener('click', function(e) { 
+                hamburger.doToggle(e);
+             });
+
+            }());
+
+        </script>
+
+
+<script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+        menu: '#menu',
+        anchors: ['Statement'],
+        sectionsColor: ['#00000000'],
+        autoScrolling: false,
+        licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
+        paddingBottom: 0,
+        paddingTop: 0
+    });
+  </script> 
+
+<!-- End Javascript -->
