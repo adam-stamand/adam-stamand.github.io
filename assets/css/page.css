@@ -1,0 +1,45 @@
+.page-title {
+  font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+  color: #2e1c1c;
+  text-align: center;
+  font-size: 4rem;
+  margin-top: 2rem;
+}
+
+.page-description {
+  color: #363333;
+  -ms-grid-column-align: stretch;
+      justify-self: stretch;
+  text-align: center;
+  font-size: .95rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.1em;
+}
+
+.section {
+  padding: 0 130px 0 130px;
+}
+
+.section .page-content p {
+  font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+  color: #363333;
+  -ms-grid-column-align: stretch;
+      justify-self: stretch;
+  text-align: left;
+  font-size: 1.1rem;
+  font-weight: none;
+  margin-bottom: 2rem;
+}
+
+.section .page-content h1 {
+  color: #363333;
+  text-align: left;
+  font-size: .85rem;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+/*# sourceMappingURL=page.css.map */

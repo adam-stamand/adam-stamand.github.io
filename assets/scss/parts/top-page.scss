@@ -1,99 +1,10 @@
-// @import 'tools/normalize';
-// @import 'tools/animate';
-@import 'variables';
-
-
-.hamburger-menu{
-  -webkit-transition: top 0.5s ease;
-  -moz-transition: top 0.5s ease;
-  -ms-transition: top 0.5s ease;
-  -o-transition: top 0.5s ease;
-  transition: top 0.5s ease;
-  background: #7772686c;
-  opacity: 1;
-  /* cursor: pointer; */
-  font-size: 2rem;
-  height: 13.75rem;
-  right: 0;
-  top: -13.75rem;
-  /* padding: 2rem 2rem 2rem 2rem; */
-  /* padding-top: 8rem; */
-  position: fixed;
-  /* top: 0; */
-  width: auto;
-  z-index: 1; 
-  .hamburger-menu-list{
-    display: flex;
-    flex-direction: column;
-    margin-top: 40px;
-    padding: 0; 
-  }
-  
-}
-.hamburger-menu.expanded {
-  top: 0; 
-}
-
-.hamburger-button{
-    position: fixed;
-    top: 0;
-    right:0;
-    z-index: 200;
-}
-
-#success{
-    cursor: pointer;
-    /* background:#03a679;
-    color:#f0f0f0;   */
-  }
-  
-  #failure{
-    background:#ff3939;
-    color:#f0f0f0;  
-  }
-  
-  .notify{  
-    position:fixed;
-    bottom:0px;
-    width:100%;
-    height:0;  
-    box-sizing:border-box;
-    color:white;  
-    text-align:center;
-    background:rgba(0,0,0,.6);
-    overflow:hidden;
-    box-sizing:border-box;
-    transition:height .5s;
-    z-index:50;
-  }
-  
-  #notifyType:before{
-    display:block;
-    margin-top:15px; 
-    
-  }
-  
-  .active{  
-    height:50px;
-  }
-  
-  .success:before{
-    Content:"Email address copied to clipboard!";
-  }
-
-.fullpage-base{
-    background-color: #ece9e3;
-    
-}
 
 .top-page-image{
     position: fixed;
     top:0;
     left:0;
     img{
-        // min-width:40%;
-        max-width:40vw;
-        // width:30vw;
+        
         min-height: 100vh;
         
     }
@@ -104,19 +15,22 @@
     flex-direction: column;
     font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
     text-align: left;
+
+    height: 90%;
     padding:0;
     margin:0;
     overflow: hidden;
-    
+    margin-top: 2rem;
     h1{
-        color: #030;
+        color: #201e17;
         font-weight: 1000;
         font-size:4.2rem;
-        margin-left: 2rem;
+        margin-left: 0rem;
+        line-height: 4rem;
     }
 
     h2{
-        color: #302b1f;
+        color: #352f22;
         font-weight: 1000;
         font-size:1.6rem;
         margin-left: 4rem;
@@ -125,9 +39,19 @@
         text-transform: uppercase;
     }
 
+    h3{
+        color: #352f22;
+        font-weight: bold;
+        font-size:.85rem;
+        margin-left: 4rem;
+        font-family: 'Montserrat', sans-serif; 
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+    }
+
     p{
         font-size:1.5rem;
-        margin: 2rem 11rem 0rem 11rem;
+        margin: 2rem 0rem 0rem 8rem;
         flex:1;
     }
 
@@ -136,11 +60,11 @@
 
 .home-text{
     @extend %top-page-text;
-    margin-left: 40vw;
-    
+    margin-left: 35vw;
+
     .home-social{
         
-
+        // vertical-align: bottom;
         padding: 1rem 0;
         list-style: none;
         margin: .8rem;
@@ -181,16 +105,11 @@
 
 .resume-text{
     @extend %top-page-text;
-    margin-left: 50vw;
+    margin-left: 35vw;
 
 }
 .about-text{
     @extend %top-page-text;
-    margin-left: 50vw;
+    margin-left: 40vw;
 
 }
-
-
-
-// - - - - - - - - - - Header Styles - - - - - - - - - - //
-@import 'parts/home';

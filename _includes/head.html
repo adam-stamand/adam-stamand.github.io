@@ -29,10 +29,18 @@
 	
 	<!-- Styles -->
 	<link href="{{ "/dist/hamburgers.css" | prepend: site.baseurl }}" rel="stylesheet">
-	<link rel="stylesheet" href="{{ "/assets/css/scss/main.css" | prepend: site.baseurl }}">
+	<link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
 	<link rel="stylesheet" type="text/css" href="{{ "/dist/fullpage.css"  | prepend: site.baseurl }}">
 	<link rel="stylesheet" type="text/css" href="{{ "/dist/example.css"   | prepend: site.baseurl }}">
-	
+	<style>
+		.section{
+			background-size: cover;
+		}
+		#section-idea{
+			background-image: url({{site.baseurl}}/assets/img/idea-back.jpg);
+			padding: 6% 0 0 0;
+		}
+	</style>
 	<!-- <link rel="shortcut icon" href="{{ "/assets/img/favicon/favicon.ico" | prepend: site.baseurl }}" type="image/x-icon">
 	<link rel="apple-touch-icon" href="{{ "/assets/img/favicon/apple-touch-icon.png" | prepend: site.baseurl }}">
 	<link rel="apple-touch-icon" sizes="72x72" href="{{ "/assets/img/favicon/apple-touch-icon-72x72.png" | prepend: site.baseurl }}">
