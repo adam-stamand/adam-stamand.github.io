@@ -105,6 +105,11 @@ p{
 	color: #fff;
 }
 #menu{
+	animation-duration: 0.7s;
+	animation-fill-mode: both;
+	animation-name: fadeInLeft;
+	animation-delay: 0.75s;
+
 	position:fixed;
 	display: flex;
 	flex-direction: column;

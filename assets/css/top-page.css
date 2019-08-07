@@ -2,6 +2,14 @@
   position: fixed;
   top: 0;
   left: 0;
+  -webkit-animation-duration: 0.7s;
+          animation-duration: 0.7s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-delay: 0.75s;
+          animation-delay: 0.75s;
 }
 
 .top-page-image img {
@@ -26,6 +34,14 @@
 }
 
 .home-text h1, .resume-text h1, .about-text h1 {
+  -webkit-animation-duration: 0.7s;
+          animation-duration: 0.7s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-name: fadeInDown;
+          animation-name: fadeInDown;
+  -webkit-animation-delay: 0.75s;
+          animation-delay: 0.75s;
   color: #201e17;
   font-weight: 1000;
   font-size: 4.2rem;
@@ -34,6 +50,14 @@
 }
 
 .home-text h2, .resume-text h2, .about-text h2 {
+  -webkit-animation-duration: 0.7s;
+          animation-duration: 0.7s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-name: fadeInDown;
+          animation-name: fadeInDown;
+  -webkit-animation-delay: 0.75s;
+          animation-delay: 0.75s;
   color: #352f22;
   font-weight: 1000;
   font-size: 1.6rem;
@@ -44,6 +68,14 @@
 }
 
 .home-text h3, .resume-text h3, .about-text h3 {
+  -webkit-animation-duration: 0.7s;
+          animation-duration: 0.7s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-name: fadeInDown;
+          animation-name: fadeInDown;
+  -webkit-animation-delay: 0.75s;
+          animation-delay: 0.75s;
   color: #352f22;
   font-weight: bold;
   font-size: .85rem;
@@ -54,6 +86,14 @@
 }
 
 .home-text p, .resume-text p, .about-text p {
+  -webkit-animation-duration: 0.7s;
+          animation-duration: 0.7s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-name: fadeInDown;
+          animation-name: fadeInDown;
+  -webkit-animation-delay: 0.75s;
+          animation-delay: 0.75s;
   font-size: 1.5rem;
   margin: 2rem 0rem 0rem 8rem;
   -webkit-box-flex: 1;
@@ -66,6 +106,14 @@
 }
 
 .home-text .home-social {
+  -webkit-animation-duration: 0.7s;
+          animation-duration: 0.7s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-name: fadeInUp;
+          animation-name: fadeInUp;
+  -webkit-animation-delay: 0.75s;
+          animation-delay: 0.75s;
   padding: 1rem 0;
   list-style: none;
   margin: .8rem;

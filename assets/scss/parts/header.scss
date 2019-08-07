@@ -6,7 +6,7 @@
     -o-transition: top 0.5s ease;
     transition: top 0.5s ease;
     background: #7772686c;
-    
+    line-height: normal;
     position: fixed;
     right: 0;
     top: -13.00rem;
@@ -78,6 +78,7 @@
   }
   
   .hamburger-button{
+
       position: fixed;
       top: 0;
       right:0;

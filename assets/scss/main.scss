@@ -1,7 +1,22 @@
 // @import 'tools/normalize';
-// @import 'tools/animate';
+@import 'tools/animate';
 @import 'variables';
 
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Rubik:400,500,700,900');
+
+
+
+body {
+  font-family: 'Rubik', sans-serif;
+  background-color: #ece9e3;
+}
+
+.github-component {
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+}
 
 
 
@@ -87,35 +102,38 @@
   }
 
 
-  .life-list{
-    text-align:center;
-    font-size: 1.75rem;
-    font-weight: 900;
-    font-family: 'Montserrat', sans-serif;
-    letter-spacing: 0.05em;
-    margin: 2.5rem 0 0 0;
-    li{
-        padding:.3rem 0rem .3rem 0rem;
-        margin-bottom:.5rem;
-        transition: 0.35s;
-        a{
-            color: #383737;
-            text-decoration: none;
-            display:block;
-            // background-color: #2e2e2e00;
-            margin: 0 1rem 0 1rem;
-            opacity: .6;
-            transition: 0.35s;
-        }
-        a:hover{
-        //   background-color: #2e2e2e8e;
-            color: #ece9e3;
-            opacity: 1;
-           
-        } 
-    }
-
+.life-list{
+  text-align:center;
+  font-size: 1.75rem;
+  font-weight: 900;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.05em;
+  margin: 2.5rem 0 0 0;
+  li{
+      padding:.3rem 0rem .3rem 0rem;
+      margin-bottom:.5rem;
+      transition: 0.35s;
+      a{
+          color: #383737;
+          text-decoration: none;
+          display:block;
+          // background-color: #2e2e2e00;
+          margin: 0 1rem 0 1rem;
+          opacity: .6;
+          transition: 0.35s;
+      }
+      a:hover{
+      //   background-color: #2e2e2e8e;
+          color: #ece9e3;
+          opacity: 1;
+          
+      } 
   }
+
+}
+
+
+
 
 // - - - - - - - - - - Header Styles - - - - - - - - - - //
 @import 'parts/header';
@@ -127,3 +145,5 @@
 @import 'parts/resume';
 
 @import 'parts/page';
+
+@import 'parts/projects';
