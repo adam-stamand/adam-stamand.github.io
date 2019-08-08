@@ -19,31 +19,18 @@
     }
 }
 
-.home-img{
-    position:absolute;
-    display: flex;
-    // top:0;
-    left:0;
-    // background-color: black;
-    overflow: hidden;
-    img{
-        // min-height: 500px;
-        width:35%;
-        // max-width:35%;
-        // max-height:100vh;
-    }
-}
 
 %top-page-text{
-    position:absolute;
+    // position:relative;
     display: flex;
     flex-direction: column;
     font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+    min-width:700px;
     width:700px;
     // min-width: 600px;
-    height:90%;
-    left:40%; 
-    margin-top: 2rem;
+    height:100%;
+    // left:0%; 
+    margin-top: 14rem;
     margin-left:2rem;
     
     text-align: left;
@@ -101,11 +88,39 @@
 
 }
 
+.home-container{
+    position: absolute;
+    display: flex;
+    height:100%;
+    width:100%;
+    // background-color: green;
+ 
+
+}
+
+.home-img{
+    position:relative;
+    display: flex;
+
+    // top:0;  
+    // left:0;
+    // background-color: black;
+    overflow: hidden;
+        // min-height: 500px;
+        height:100%;
+        min-height:100%;
+        min-width:300px;
+        // max-width:35%;
+        // max-height:100vh;
+    
+}
 
 .home-text{
+    margin:auto;
+    padding:2rem;
     @extend %top-page-text;
     // position:right;
-  
+    // background-color: white;
     .home-social{
         // position: relative;
         // bottom:0;
@@ -151,7 +166,6 @@
     
     
 }
-
 .resume-text{
     @extend %top-page-text;
     margin-left: 5rem;
