@@ -13,10 +13,25 @@
 }
 
 .top-page-image img {
-  min-height: 100vh;
+  width: 100%;
+  height: 100vh;
+}
+
+.home-img {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  left: 0;
+  overflow: hidden;
+}
+
+.home-img img {
+  width: 35%;
 }
 
 .home-text, .resume-text, .about-text {
+  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -25,12 +40,12 @@
       -ms-flex-direction: column;
           flex-direction: column;
   font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
-  text-align: left;
+  width: 700px;
   height: 90%;
-  padding: 0;
-  margin: 0;
-  overflow: hidden;
+  left: 40%;
   margin-top: 2rem;
+  margin-left: 2rem;
+  text-align: left;
 }
 
 .home-text h1, .resume-text h1, .about-text h1 {
@@ -101,10 +116,6 @@
           flex: 1;
 }
 
-.home-text {
-  margin-left: 35vw;
-}
-
 .home-text .home-social {
   -webkit-animation-duration: 0.7s;
           animation-duration: 0.7s;
@@ -119,12 +130,11 @@
   margin: .8rem;
   text-align: center;
   border-bottom: 1px solid #333333;
-  overflow: hidden;
 }
 
 .home-text .home-social li {
   display: inline-block;
-  margin-left: 3.5rem;
+  margin: 0 1.5rem 0 1.5rem;
 }
 
 .home-text .home-social a {
@@ -146,10 +156,10 @@
 }
 
 .resume-text {
-  margin-left: 35vw;
+  margin-left: 5rem;
 }
 
 .about-text {
-  margin-left: 40vw;
+  margin-left: 9rem;
 }
 /*# sourceMappingURL=top-page.css.map */
