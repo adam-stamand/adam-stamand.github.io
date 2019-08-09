@@ -17,7 +17,38 @@
   height: 100vh;
 }
 
-.home-text, .resume-text, .about-text {
+.top-container {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.top-img {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-animation-duration: 1.3s;
+          animation-duration: 1.3s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-delay: 0.75s;
+          animation-delay: 0.75s;
+  overflow: hidden;
+  height: 100%;
+  min-height: 100%;
+  min-height: 600px;
+  min-width: 400px;
+}
+
+.top-text {
+  margin: auto;
+  padding: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -26,15 +57,13 @@
       -ms-flex-direction: column;
           flex-direction: column;
   font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
-  min-width: 700px;
+  min-width: 500px;
   width: 700px;
   height: 100%;
-  margin-top: 14rem;
-  margin-left: 2rem;
   text-align: left;
 }
 
-.home-text h1, .resume-text h1, .about-text h1 {
+.top-text h1 {
   -webkit-animation-duration: 0.7s;
           animation-duration: 0.7s;
   -webkit-animation-fill-mode: both;
@@ -50,7 +79,7 @@
   line-height: 4rem;
 }
 
-.home-text h2, .resume-text h2, .about-text h2 {
+.top-text h2 {
   -webkit-animation-duration: 0.7s;
           animation-duration: 0.7s;
   -webkit-animation-fill-mode: both;
@@ -68,7 +97,7 @@
   text-transform: uppercase;
 }
 
-.home-text h3, .resume-text h3, .about-text h3 {
+.top-text h3 {
   -webkit-animation-duration: 0.7s;
           animation-duration: 0.7s;
   -webkit-animation-fill-mode: both;
@@ -86,7 +115,7 @@
   text-transform: uppercase;
 }
 
-.home-text p, .resume-text p, .about-text p {
+.top-text p {
   -webkit-animation-duration: 0.7s;
           animation-duration: 0.7s;
   -webkit-animation-fill-mode: both;
@@ -102,32 +131,7 @@
           flex: 1;
 }
 
-.home-container {
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  width: 100%;
-}
-
-.home-img {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  overflow: hidden;
-  height: 100%;
-  min-height: 100%;
-  min-width: 300px;
-}
-
-.home-text {
-  margin: auto;
-  padding: 2rem;
-}
-
-.home-text .home-social {
+.home-social {
   -webkit-animation-duration: 0.7s;
           animation-duration: 0.7s;
   -webkit-animation-fill-mode: both;
@@ -143,12 +147,12 @@
   border-bottom: 1px solid #333333;
 }
 
-.home-text .home-social li {
+.home-social li {
   display: inline-block;
   margin: 0 1.5rem 0 1.5rem;
 }
 
-.home-text .home-social a {
+.home-social a {
   color: #7b7b7b;
   display: inline-block;
   padding: 0.5rem 1rem;
@@ -161,16 +165,8 @@
   transition: all .35s ease-in-out;
 }
 
-.home-text .home-social a:hover {
+.home-social a:hover {
   background-color: #4e4e4e;
   color: #ffffff;
-}
-
-.resume-text {
-  margin-left: 5rem;
-}
-
-.about-text {
-  margin-left: 9rem;
 }
 /*# sourceMappingURL=top-page.css.map */
