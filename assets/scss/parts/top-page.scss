@@ -20,7 +20,7 @@
     display: flex;
     height:100%;
     width:100%;
-    overflow:hidden;
+    // overflow:hidden;
 }
 
 .top-img{
@@ -47,6 +47,7 @@
     font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
     min-width:500px;
     width:700px;
+    min-height:500px;
     height:100%;
     text-align: left;
     
@@ -107,7 +108,7 @@
 .home-social{
     animation-duration: 0.7s;
     animation-fill-mode: both;
-    animation-name: fadeInUp;
+    animation-name: fadeInDown;
     animation-delay: 0.75s;
     padding: 1rem 0;
     list-style: none;
