@@ -3358,6 +3358,7 @@ body {
   display: flex;
   height: 100%;
   width: 100%;
+  overflow: hidden;
 }
 
 .top-img {
@@ -3504,6 +3505,108 @@ body {
   color: #ffffff;
 }
 
+.spectrum_label {
+  display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: left;
+  -ms-flex-align: left;
+  align-items: left;
+  font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+  font-size: 10px;
+  font-weight: 1000;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: .5rem;
+}
+
+.skill-spectrum {
+  display: -ms-grid;
+  display: grid;
+  grid-row-gap: 50px;
+  -ms-grid-columns: 33% 33% 34%;
+      grid-template-columns: 33% 33% 34%;
+  margin-left: 100px;
+  margin-right: 100px;
+  font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+}
+
+.skill-spectrum .spectrum-col:hover .col-img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.skill-spectrum .spectrum-col:hover .col-list {
+  opacity: 1;
+  color: #3f3e3d;
+}
+
+.skill-spectrum .spectrum-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.skill-spectrum .col-img {
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+  /* Animation */
+  margin-bottom: 2.5rem;
+}
+
+.skill-spectrum .col-list {
+  -webkit-transition: .2s;
+  transition: .2s;
+  /* Animation */
+  font-size: .8rem;
+  text-align: left;
+  opacity: .7;
+  font-weight: 500;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  color: #3b3a3a;
+  margin: 1.5rem;
+}
+
+.skill-spectrum .col-list ul {
+  margin-bottom: 25px;
+}
+
+.skill-spectrum .col-list li {
+  font-weight: 400;
+  font-size: 1.05rem;
+  text-align: left;
+  list-style: none;
+  color: #2e1e11;
+  text-transform: none;
+  margin-left: 20px;
+}
+
+.page-container {
+  -webkit-animation-duration: 1.3s;
+          animation-duration: 1.3s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-delay: 0.75s;
+          animation-delay: 0.75s;
+  padding: 2rem 130px 0 130px;
+  height: 100%;
+  width: 100%;
+}
+
 .page-grid {
   display: -ms-grid;
   display: grid;
@@ -3619,100 +3722,11 @@ body {
   border-radius: 8px;
 }
 
-.spectrum_label {
-  display: flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: left;
-  -ms-flex-align: left;
-  align-items: left;
-  font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
-  font-size: 10px;
-  font-weight: 1000;
-  letter-spacing: .1rem;
-  text-transform: uppercase;
-  margin-left: 100px;
-  margin-right: 100px;
-  margin-bottom: .5rem;
-}
-
-.skill-spectrum {
-  display: -ms-grid;
-  display: grid;
-  grid-row-gap: 50px;
-  -ms-grid-columns: 33% 33% 34%;
-      grid-template-columns: 33% 33% 34%;
-  margin-left: 100px;
-  margin-right: 100px;
-  font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
-}
-
-.skill-spectrum .spectrum-col:hover .col-img {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-.skill-spectrum .spectrum-col:hover .col-list {
-  opacity: 1;
-  color: #3f3e3d;
-}
-
-.skill-spectrum .spectrum-col {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.skill-spectrum .col-img {
-  -webkit-transition: -webkit-transform .2s;
-  transition: -webkit-transform .2s;
-  transition: transform .2s;
-  transition: transform .2s, -webkit-transform .2s;
-  /* Animation */
-  margin-bottom: 2.5rem;
-}
-
-.skill-spectrum .col-list {
-  -webkit-transition: .2s;
-  transition: .2s;
-  /* Animation */
-  font-size: .8rem;
-  text-align: left;
-  opacity: .7;
-  font-weight: 500;
-  letter-spacing: .1rem;
-  text-transform: uppercase;
-  color: #3b3a3a;
-  margin: 1.5rem;
-}
-
-.skill-spectrum .col-list ul {
-  margin-bottom: 25px;
-}
-
-.skill-spectrum .col-list li {
-  font-weight: 400;
-  font-size: 1.05rem;
-  text-align: left;
-  list-style: none;
-  color: #2e1e11;
-  text-transform: none;
-  margin-left: 20px;
-}
-
 .page-title {
   font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
   color: #2e1c1c;
   text-align: center;
   font-size: 4rem;
-  margin-top: 2rem;
 }
 
 .page-description {
@@ -3725,10 +3739,6 @@ body {
   margin-bottom: 2rem;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 0.1em;
-}
-
-.section {
-  padding: 0 130px 0 130px;
 }
 
 .section .page-content p {
