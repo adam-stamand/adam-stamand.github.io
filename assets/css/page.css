@@ -45,12 +45,20 @@
   color: #2e1c1c;
 }
 
-.page-grid .page-col-2 .col-title {
+.page-grid .page-col-2 .col-title h1 {
   font-size: 1.6rem;
   font-weight: 600;
-  margin-bottom: .95rem;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 0.1em;
+}
+
+.page-grid .page-col-2 .col-title h2 {
+  font-size: .75rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
 }
 
 .page-grid .page-col-2 .col-description {
@@ -58,6 +66,7 @@
   display: grid;
   -ms-grid-columns: auto auto;
       grid-template-columns: auto auto;
+  row-gap: 0;
   font-size: 1rem;
   font-weight: 600;
   margin-bottom: 1rem;
@@ -81,13 +90,19 @@
   text-align: right;
 }
 
-.page-grid .page-col-2 .col-description .col-img {
+.page-grid .page-col-2 .col-description .col-description-title {
   -ms-grid-column: 1;
       grid-column-start: 1;
   grid-column-end: 2;
   -ms-grid-row: 1;
       grid-row-start: 1;
   grid-row-end: 2;
+}
+
+.page-grid .page-col-2 .col-description .col-description-title h2 {
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  color: #5e9516;
 }
 
 .page-grid .page-col-2 .col-description .col-location {
@@ -128,10 +143,20 @@
 }
 
 .page-title {
-  font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+  font-family: 'Lato', sans-serif;
+  font-weight: 800;
   color: #2e1c1c;
   text-align: center;
   font-size: 4rem;
+}
+
+.page-title hr {
+  height: 1px;
+  width: 50px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
 }
 
 .page-description {

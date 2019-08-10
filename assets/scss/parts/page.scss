@@ -36,11 +36,21 @@
         text-align: left;
         color: #2e1c1c;
             .col-title{
-                font-size: 1.6rem;
-                font-weight: 600;
-                margin-bottom: .95rem;
-                font-family: 'Montserrat', sans-serif;
-                letter-spacing: 0.1em;
+                h1{
+                    font-size: 1.6rem;
+                    font-weight: 600;
+                    // margin-bottom: .95rem;
+                    font-family: 'Montserrat', sans-serif;
+                    letter-spacing: 0.1em;
+                }
+                h2{
+                    font-size: .75rem;
+                    font-weight: 600;
+                    margin-bottom: 1rem;
+                    font-family: 'Montserrat', sans-serif;
+                    letter-spacing: 0.05em;    
+                    text-transform: uppercase;
+                }
             }
             .col-description{
                 .col-date{
@@ -56,7 +66,12 @@
                     font-weight: 600;
                     text-align: right;
                 }
-                .col-img{
+                .col-description-title{
+                    h2{
+                        font-family: 'Lato', sans-serif;
+                        font-weight: bold;
+                        color:#5e9516;
+                    }
                     grid-column-start: 1; 
                     grid-column-end: 2; 
                     grid-row-start: 1; 
@@ -70,6 +85,7 @@
                 }
                 display: grid;
                 grid-template-columns: auto auto ;
+                row-gap: 0;
                 font-size: 1rem;
                 font-weight: 600;
                 margin-bottom: 1rem;
@@ -110,12 +126,23 @@
 
 
 .page-title{
-    font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+    // font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-weight: 800;
     color: #2e1c1c;
     text-align: center;
     // vertical-align: text-top;
     font-size: 4rem;
     // margin-top: 2rem;
+    hr {
+        // display: inline-block;
+        height: 1px;
+        width:50px;
+        border: 0;
+        border-top: 1px solid #ccc;
+        margin: 1em 0;
+        padding: 0;
+    }
 }
 
 .page-description{

@@ -13,12 +13,7 @@ permalink: /resume/
     <li data-menuanchor="Skills"><a href="#Skills">Skills</a></li>
  </ul>
  
- <div id="fullpage" class="fullpage-base">
-
- <!-- <div class="top-page-image">
-        <img src="{{site.baseurl}}/assets/img/comp_img_edit2.png" style="max-width:40vw;" alt="Author image">
-</div> -->
-<!-- style="  background-image: url('{{site.baseurl}}/assets/img/comp_img_edit2.png');background-repeat: no-repeat;background-attachment: fixed;background-size: 40% 100%;" -->
+<div id="fullpage" class="fullpage-base">
 
 <div class="section " id="section0">
     <div class="top-container">
@@ -41,7 +36,7 @@ permalink: /resume/
 <div class="section " id="section1">
     <div class="page-container">
         <h1 class="page-title">
-            Education
+        <hr>Education
         </h1>
 
         <h2 class="page-description">
@@ -55,10 +50,12 @@ permalink: /resume/
             </div>
                                 
             <div class="page-col-2">
-                <h1 class="col-title"> B.S. Computer Engineering</h1>
-                
+                <div class="col-title">
+                    <h1>B.S. Computer Engineering</h1>
+                    <h2>Minor Computer Science</h2>
+                </div>
                 <div class="col-description">
-                    <div class="col-img">
+                    <div class="col-description-title">
                         <h2>University of Colorado</h2>
                     </div>
 
@@ -75,7 +72,7 @@ permalink: /resume/
                 
                 <div class="page-content">
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        
                     </p>
                 </div>
                 
@@ -109,11 +106,13 @@ permalink: /resume/
             </div>
                                 
             <div class="page-col-2">
-                <h1 class="col-title">  Embedded Flight Software Engineer</h1>
+                <div class="col-title">
+                    <h1 class="col-title">  Embedded Flight Software Engineer</h1>
+                </div>
                 
                 <div class="col-description">
-                    <div class="col-img">
-                        <h2>NASA Jet Propulsion Laboratory</h2>
+                    <div class="col-description-title">
+                            <h2>NASA Jet Propulsion Laboratory</h2>
                     </div>
 
                     <div class="col-location">
@@ -355,7 +354,7 @@ permalink: /resume/
     var myFullpage = new fullpage('#fullpage', {
         menu: '#menu',
         anchors: ['Statement', 'Education', 'Experience', 'Skills'],
-        sectionsColor: ['#ece9e3','#dbd5cc', '#ece9e3', '#dbd5cc'],
+        sectionsColor: ['#ece9e3','#ffffff', '#ece9e3', '#dbd5cc'],
         autoScrolling: false,   
         licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
         paddingBottom: 0,
