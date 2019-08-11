@@ -1,13 +1,16 @@
 .hamburger-menu {
   -webkit-transition: top 0.5s ease;
   transition: top 0.5s ease;
-  background: #7772686c;
+  background: #d6d3cce0;
+  border-radius: 5px;
   line-height: normal;
   position: fixed;
   right: 0;
-  top: -13.00rem;
+  top: -15.00rem;
+  -webkit-box-shadow: -4px 6px 13px #585858;
+          box-shadow: -4px 6px 13px #585858;
   font-size: 2rem;
-  height: 13rem;
+  height: 12.65rem;
   width: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -24,7 +27,7 @@
   font-weight: 900;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 0.05em;
-  margin: 2.5rem 0 0 0;
+  margin: 2.75rem 0 0 0;
 }
 
 .hamburger-menu ul p {
@@ -61,15 +64,16 @@
 }
 
 .hamburger-menu ul li:hover {
-  background-color: #2e2e2e8e;
+  background-color: #2e2e2ed3;
 }
 
 .hamburger-menu ul li:hover a {
   opacity: 1;
+  color: #dfd7d0;
 }
 
 .hamburger-menu.expanded {
-  top: 0;
+  top: -.5rem;
 }
 
 .hamburger-button {
