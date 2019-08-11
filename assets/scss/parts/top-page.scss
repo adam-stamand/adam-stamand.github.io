@@ -44,6 +44,7 @@
 %base-top-img{
     // overflow:hidden;
     position:relative;
+    min-width:200px;
     // display: flex;
     animation-duration: 1.3s;
     animation-fill-mode: both;
@@ -68,6 +69,7 @@
 
 .personal-img{
     width:60%;
+    
     @extend %base-top-img;
 
 }

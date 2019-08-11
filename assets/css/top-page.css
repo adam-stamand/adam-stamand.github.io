@@ -31,6 +31,7 @@
 
 .top-img, .personal-img, .reumse-img {
   position: relative;
+  min-width: 200px;
   -webkit-animation-duration: 1.3s;
           animation-duration: 1.3s;
   -webkit-animation-fill-mode: both;
