@@ -84,68 +84,81 @@
 }
 
 .top-text{
-    position:relative;  
-    margin:auto;
-    padding:2rem;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+
+    margin:auto;
+    padding:2rem;
+
     font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
     min-width:500px;
     width:700px;
     min-height:500px;
     height:100%;
     text-align: left;
+    .header-text{
+        position:relative;  
+        // display: flex;
+        // flex-direction: column;
+        // justify-items: flex-start;
+        // align-content: top;
+        // align-items: top;
+        // justify-content: flex-start;
+        // margin: 0;
+        // padding: 0;
+        // height:auto;
+        h1{
+            animation-duration: 0.7s;
+            animation-fill-mode: both;
+            animation-name: fadeInDown;
+            animation-delay: 0.75s;
+            margin:0;
+            color: #201e17;
+            font-weight: 1000;
+            font-size:4.2rem;
+            line-height: 4rem;
+        }
     
-    h1{
-        animation-duration: 0.7s;
-        animation-fill-mode: both;
-        animation-name: fadeInDown;
-        animation-delay: 0.75s;
+        h2{
+            line-height: 1.4rem;
+            animation-duration: 0.7s;
+            animation-fill-mode: both;
+            animation-name: fadeInDown;
+            animation-delay: 0.75s;
+            color: #352f22;
+            font-weight: 1000;
+            font-size:1.6rem;
+            margin: 0 0 0 4rem;
+            /* font-family: 'Montserrat', sans-serif; */
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
     
-        color: #201e17;
-        font-weight: 1000;
-        font-size:4.2rem;
-        margin-left: 0rem;
-        line-height: 4rem;
+        h3{
+            animation-duration: 0.7s;
+            animation-fill-mode: both;
+            animation-name: fadeInDown;
+            animation-delay: 0.75s;
+            color: #352f22;
+            font-weight: bold;
+            font-size:.85rem;
+            margin: 0 0 0 4rem;
+            font-family: 'Montserrat', sans-serif; 
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+        p{
+            animation-duration: 0.7s;
+            animation-fill-mode: both;
+            animation-name: fadeInDown;
+            animation-delay: 0.75s;
+            font-size:1.5rem;
+            margin: 2rem 0rem 0rem 8rem;
+            flex:1;
+        }
     }
 
-    h2{
-        animation-duration: 0.7s;
-        animation-fill-mode: both;
-        animation-name: fadeInDown;
-        animation-delay: 0.75s;
-        color: #352f22;
-        font-weight: 1000;
-        font-size:1.6rem;
-        margin-left: 4rem;
-        /* font-family: 'Montserrat', sans-serif; */
-        letter-spacing: 0.05em;
-        text-transform: uppercase;
-    }
-
-    h3{
-        animation-duration: 0.7s;
-        animation-fill-mode: both;
-        animation-name: fadeInDown;
-        animation-delay: 0.75s;
-        color: #352f22;
-        font-weight: bold;
-        font-size:.85rem;
-        margin-left: 4rem;
-        font-family: 'Montserrat', sans-serif; 
-        letter-spacing: 0.05em;
-        text-transform: uppercase;
-    }
-
-    p{
-        animation-duration: 0.7s;
-        animation-fill-mode: both;
-        animation-name: fadeInDown;
-        animation-delay: 0.75s;
-        font-size:1.5rem;
-        margin: 2rem 0rem 0rem 8rem;
-        flex:1;
-    }
     
 }
 

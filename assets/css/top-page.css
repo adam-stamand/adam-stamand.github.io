@@ -55,9 +55,6 @@
 }
 
 .top-text {
-  position: relative;
-  margin: auto;
-  padding: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -65,6 +62,11 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: auto;
+  padding: 2rem;
   font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
   min-width: 500px;
   width: 700px;
@@ -73,7 +75,11 @@
   text-align: left;
 }
 
-.top-text h1 {
+.top-text .header-text {
+  position: relative;
+}
+
+.top-text .header-text h1 {
   -webkit-animation-duration: 0.7s;
           animation-duration: 0.7s;
   -webkit-animation-fill-mode: both;
@@ -82,14 +88,15 @@
           animation-name: fadeInDown;
   -webkit-animation-delay: 0.75s;
           animation-delay: 0.75s;
+  margin: 0;
   color: #201e17;
   font-weight: 1000;
   font-size: 4.2rem;
-  margin-left: 0rem;
   line-height: 4rem;
 }
 
-.top-text h2 {
+.top-text .header-text h2 {
+  line-height: 1.4rem;
   -webkit-animation-duration: 0.7s;
           animation-duration: 0.7s;
   -webkit-animation-fill-mode: both;
@@ -101,13 +108,13 @@
   color: #352f22;
   font-weight: 1000;
   font-size: 1.6rem;
-  margin-left: 4rem;
+  margin: 0 0 0 4rem;
   /* font-family: 'Montserrat', sans-serif; */
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
 
-.top-text h3 {
+.top-text .header-text h3 {
   -webkit-animation-duration: 0.7s;
           animation-duration: 0.7s;
   -webkit-animation-fill-mode: both;
@@ -119,13 +126,13 @@
   color: #352f22;
   font-weight: bold;
   font-size: .85rem;
-  margin-left: 4rem;
+  margin: 0 0 0 4rem;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
 
-.top-text p {
+.top-text .header-text p {
   -webkit-animation-duration: 0.7s;
           animation-duration: 0.7s;
   -webkit-animation-fill-mode: both;
