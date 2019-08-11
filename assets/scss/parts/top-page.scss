@@ -30,6 +30,17 @@
     // transform: translate(-50%, -50%);
 }
 
+.project-container{
+
+    @extend %top-container-base;
+    flex-direction: column;
+    // justify-content:center;
+    // align-content:center;
+    
+    align-items:center;
+    // justify-items:center;
+    
+}
 .top-container{
     @extend %top-container-base;
 }
