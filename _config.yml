@@ -44,4 +44,4 @@ projects:
 
 
 include: [_pages]
-exclude: [vendor]
+exclude: [vendor, gemfiles/vendor]
