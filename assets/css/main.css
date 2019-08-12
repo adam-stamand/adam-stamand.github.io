@@ -3133,6 +3133,7 @@ body {
 
 .chapters .chapter img {
   width: 100%;
+  height: auto;
   vertical-align: middle;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
@@ -3178,6 +3179,9 @@ body {
 }
 
 .resume_flex-row {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3547,7 +3551,7 @@ body {
   -ms-flex-align: left;
   align-items: left;
   font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
-  font-size: 10px;
+  font-size: 13px;
   font-weight: 1000;
   letter-spacing: .1rem;
   text-transform: uppercase;
@@ -3560,8 +3564,8 @@ body {
   display: -ms-grid;
   display: grid;
   grid-row-gap: 50px;
-  -ms-grid-columns: 33% 33% 34%;
-      grid-template-columns: 33% 33% 34%;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
   margin-left: 100px;
   margin-right: 100px;
   font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
@@ -3585,6 +3589,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .skill-spectrum .col-img {
@@ -3593,21 +3600,26 @@ body {
   transition: transform .2s;
   transition: transform .2s, -webkit-transform .2s;
   /* Animation */
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.skill-spectrum .col-img img {
+  height: 15px;
+  width: 100%;
 }
 
 .skill-spectrum .col-list {
   -webkit-transition: .2s;
   transition: .2s;
   /* Animation */
-  font-size: .8rem;
+  font-size: .75rem;
   text-align: left;
-  opacity: .7;
-  font-weight: 500;
+  opacity: .8;
+  font-weight: bold;
   letter-spacing: .1rem;
   text-transform: uppercase;
   color: #3b3a3a;
-  margin: 1.5rem;
+  margin: 0 1.5rem 1.5rem 1.5rem;
 }
 
 .skill-spectrum .col-list ul {
@@ -3775,7 +3787,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  justify-self: stretch;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -3793,7 +3807,7 @@ body {
   font-weight: 600;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 0.1em;
-  line-height: .5rem;
+  line-height: 1.2rem;
   color: #37c;
 }
 
@@ -3801,7 +3815,6 @@ body {
   line-height: .5rem;
   font-size: .75rem;
   font-weight: 600;
-  margin-bottom: .5rem;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 0.05em;
   color: #436a99;
@@ -3809,16 +3822,17 @@ body {
 }
 
 .page-row .page-col-2 .col-description {
+  position: relative;
   width: 100%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: auto auto;
       grid-template-columns: auto auto;
-  -ms-grid-rows: 30px 30px;
-      grid-template-rows: 30px 30px;
-  padding-top: .3rem;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+  row-gap: 0rem;
   margin: 0;
-  line-height: .2rem;
+  line-height: .75rem;
   font-size: 1rem;
   font-weight: 600;
   margin-bottom: 1.35rem;
@@ -3831,12 +3845,17 @@ body {
 }
 
 .page-row .page-col-2 .col-description .col-date {
+  position: relative;
+  height: 100%;
   -ms-grid-column: 2;
       grid-column-start: 2;
   grid-column-end: 3;
-  -ms-grid-row: 1;
-      grid-row-start: 1;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
   grid-row-end: 3;
+  margin: 0;
+  margin: 0;
+  text-align: right;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -3851,29 +3870,45 @@ body {
   grid-column-end: 2;
   -ms-grid-row: 1;
       grid-row-start: 1;
-  grid-row-end: 2;
+  grid-row-end: 3;
 }
 
 .page-row .page-col-2 .col-description .col-description-title h2 {
+  overflow-wrap: break-word;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   color: #5e9516;
   font-size: 1.25rem;
+  line-height: 1.25rem;
 }
 
 .page-row .page-col-2 .col-description .col-location {
-  -ms-grid-column: 1;
-      grid-column-start: 1;
-  grid-column-end: 2;
-  -ms-grid-row: 2;
-      grid-row-start: 2;
-  grid-row-end: 3;
-}
-
-.page-row .page-col-2 .col-description .col-location h2 {
+  position: relative;
+  height: 100%;
+  -webkit-box-pack: bottom;
+      -ms-flex-pack: bottom;
+          justify-content: bottom;
+  justify-items: bottom;
+  -ms-flex-line-pack: bottom;
+      align-content: bottom;
+  -webkit-box-align: bottom;
+      -ms-flex-align: bottom;
+          align-items: bottom;
+  padding-top: .6rem;
+  margin: 0;
   font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-  font-size: 1.25rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: .75rem;
+  font-weight: 600;
+  text-align: right;
+  margin: 0;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 3;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 2;
 }
 
 .page-row .page-col-2 .col-content {
@@ -3884,16 +3919,16 @@ body {
 .page-row .page-col-2 .col-list {
   font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
   color: #4a4e53;
-  font-size: 110%;
+  font-size: 100%;
   line-height: 1rem;
   margin-bottom: 1.5rem;
   width: 100%;
-  list-style-type: square;
-  list-style-position: inside;
+  list-style-type: disc;
+  list-style-position: outside;
 }
 
 .page-row .page-col-2 .col-list li {
-  margin: .35rem 0 .35rem 0;
+  margin: .55rem 0 .55rem 1em;
 }
 
 .page-row .page-col-2 .col-tags {
@@ -3964,11 +3999,15 @@ body {
   letter-spacing: 0.1em;
 }
 
+.section .with-padding {
+  padding: 0 130px 0 130px;
+}
+
 .section .page-content p {
   font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
   color: #50555c;
   line-height: 1.25;
-  font-size: 110%;
+  font-size: 100%;
   -ms-grid-column-align: stretch;
       justify-self: stretch;
   text-align: left;

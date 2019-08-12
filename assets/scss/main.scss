@@ -37,6 +37,7 @@ body {
     
     padding: 2rem 0;
     .chapter {
+      
         position: relative;
         width: 32.333%;
         margin: 0 0.5% 1% 0.5%;
@@ -50,7 +51,9 @@ body {
 
         }
         img {
+          // object-fit: cover;
           width: 100%;
+          height:auto;
           vertical-align: middle;
           -webkit-transition: all 0.4s;
           transition: all 0.4s;
@@ -98,6 +101,7 @@ body {
   }
 
   .resume_flex-row {
+    justify-content:center;
     display: flex;
     flex-wrap: wrap;
   }
