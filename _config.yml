@@ -44,3 +44,4 @@ projects:
 
 
 include: [_pages]
+exclude: [vendor]
