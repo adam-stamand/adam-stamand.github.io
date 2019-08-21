@@ -106,15 +106,13 @@
       grid-template-columns: 350px auto;
   margin-top: 4rem;
   margin-bottom: 100px;
+  margin-right: auto;
+  margin-left: auto;
   font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
-  -ms-grid-column-align: stretch;
-      justify-self: stretch;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  max-width: 1400px;
 }
 
 .page-row .page-col-1 {

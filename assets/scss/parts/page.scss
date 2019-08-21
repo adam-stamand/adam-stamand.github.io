@@ -84,12 +84,14 @@
     // margin-left: 15vw;
     margin-top: 4rem;
     // margin-right: 15vw; 
-    margin-bottom: 100px; 
+    margin-bottom: 100px;
+    margin-right:auto;
+    margin-left:auto; 
     font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
-    justify-self: stretch;
-    align-items: flex-start;
+    // justify-self: stretch;
+    // align-items: flex-start;
     align-items: center;
-
+    max-width: 1400px;
     .page-col-1{
         margin-left:1rem;
         display:flex;

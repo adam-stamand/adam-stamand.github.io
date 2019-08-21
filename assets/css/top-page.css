@@ -39,7 +39,7 @@
   position: absolute;
 }
 
-.top-img, .personal-img, .reumse-img {
+.top-img, .personal-img, .resume-img {
   position: relative;
   min-width: 200px;
   -webkit-animation-duration: 1.3s;
@@ -60,7 +60,7 @@
   width: 67%;
 }
 
-.reumse-img {
+.resume-img {
   width: 40%;
 }
 

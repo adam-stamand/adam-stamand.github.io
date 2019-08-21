@@ -1,6 +1,6 @@
 // @import 'tools/normalize';
-@import 'tools/animate';
-@import 'variables';
+@import 'tools/_animate';
+@import '_variables';
 
 
 
@@ -9,9 +9,10 @@
 
 
 
+
+
 body {
   font-family: 'Rubik', sans-serif;
-  background-color: #ece9e3;
   background-color: #ece9e3;
 }
 
