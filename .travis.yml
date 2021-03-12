@@ -28,3 +28,11 @@ addons:
   apt:
     packages:
     - libcurl4-openssl-dev
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GH_PAGES_DEPLOY  # Set in the settings page of your repository, as a secure variable
+  keep_history: false
+  on:
+    branch: master
