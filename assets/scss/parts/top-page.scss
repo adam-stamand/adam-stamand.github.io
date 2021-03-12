@@ -16,9 +16,9 @@
 
 
 %top-container-base{
-
-    display: flex;
+    display: block;
     height:100%;
+    max-height: 100%;
     width:100%;
 }
 
@@ -27,82 +27,79 @@
     @extend %top-container-base;
     flex-direction: column;
     align-items:center;
-    
 }
+
 .top-container{
     @extend %top-container-base;
 }
 
 .home-container{
-    position: absolute;
+    display: flex;
+    height:100%;
+    width:100%;
     @extend %top-container-base;
-
+    position: absolute;
 }
 
 
 %base-top-img{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
     position:relative;
-    min-width:200px;
     animation-duration: 1.3s;
     animation-fill-mode: both;
     animation-name: fadeIn;
     animation-delay: 0.75s;
-    object-fit: cover;
-    width:35%;
+    padding-top:150px;
     height: auto;
-
 }
 
 .top-img{
     @extend %base-top-img;
+    padding-top:0;
+    margin-left: 0;
+    margin-right: 0;
+    height:100%;
+    object-fit: contain;
+    min-height:400px;
 }
 
 
 .personal-img{
-    width:67%;
-    
+    width:300px;
     @extend %base-top-img;
-
 }
 
 .resume-img{
-    width:40%;
+    width:300px;
     @extend %base-top-img;
-
 }
 
-.top-text{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+
+%top-text-base{
+
 
     margin:auto;
     padding:2rem;
 
     font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
-    min-width:500px;
-    width:700px;
+    min-width:700px;
+    max-width:800px;
     min-height:500px;
     height:100%;
+    max-height:100%;
     text-align: left;
     .header-text{
         position:relative;  
-        // display: flex;
-        // flex-direction: column;
-        // justify-items: flex-start;
-        // align-content: top;
-        // align-items: top;
-        // justify-content: flex-start;
-        // margin: 0;
-        // padding: 0;
-        // height:auto;
         h1{
+            text-align: center;
             animation-duration: 0.7s;
             animation-fill-mode: both;
             animation-name: fadeInDown;
             animation-delay: 0.75s;
-            margin:0;
             color: #2b281d;
+            margin:0;
             font-weight: 1000;
             font-size:4.2rem;
             line-height: 4rem;
@@ -118,7 +115,6 @@
             font-weight: 1000;
             font-size:1.6rem;
             margin: 0 0 0 4rem;
-            /* font-family: 'Montserrat', sans-serif; */
             letter-spacing: 0.05em;
             text-transform: uppercase;
         }
@@ -141,15 +137,34 @@
             animation-fill-mode: both;
             animation-name: fadeInDown;
             animation-delay: 0.75s;
-            font-size:1.5rem;
-            margin: 2rem 0rem 0rem 8rem;
-            flex:1;
+            font-size:1.4rem;
+            margin-top: 3rem;
+            margin-right: 10%;
+            margin-left: 10%;
         }
-    }
-
-    
+    }   
 }
 
+.top-text{
+    @extend %top-text-base;
+    display: block;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.top-text-home{
+    @extend %top-text-base;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    .header-text{
+        position:relative;  
+        h1{
+            text-align: left;
+        }
+    }
+}
 
 .home-social{
     animation-duration: 0.7s;

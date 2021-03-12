@@ -16,18 +16,18 @@ permalink: /resume/
 
 <div class="section" >
     <div class="top-container">
-        <img class="resume-img" src="{{site.baseurl}}/assets/img/comp_img_edit.png" alt="Author image">
+        <img class="resume-img" src="{{site.baseurl}}/assets/img/profile_bw_circle.png" alt="Author image">
         <div class="top-text">
             <div class="header-text">
                 <h1>I make hardware <br>and software work, together.</h1>
-                <p style="margin-top:6rem;">            
-                    I'm a highly motivated embedded systems engineer
+                <p>            
+                    I'm a highly motivated embedded software engineer
                     with years of experience
-                    in hardware/software design, development and testing. 
+                    in software design, development and testing. 
                     <br><br>
-                    Seeking to apply my skills in a
-                    fast paced, highly collaborative environment. 
-                    I have a particular interest in robotics, IOT, and autonomous systems 
+                    I'm seeking to apply my skills in
+                    fast paced, highly collaborative environments 
+                    with a particular interest in robotics, IOT, and autonomous systems. 
                 </p>
             </div>
         </div>
@@ -130,12 +130,12 @@ permalink: /resume/
                     <div class="page-col-2" >
                         <div class="col-title">
                             <h1>Embedded Flight Software Engineer</h1>
-                            <h2>Europa Clipper</h2>
+                            <h2>Loft Orbital</h2>
                         </div>
                         
                         <div class="col-description">
                             <div class="col-description-title">
-                            <h2>Loft Orbital</h2>
+                            <h2>Payload Integration and Control Unit</h2>
                             </div>
                 
                             <div class="col-location">
@@ -151,12 +151,38 @@ permalink: /resume/
                     
                         <div class="page-content">
                             <p>
+                                The Payload Integration and Control Unit (PICU) is a satellite subsystem designed to act as a payload hub, sitting
+                                between the satellite bus and multiple satellite payloads. The mission of the PICU is to enable the excution of several
+                                missions across several different payloads, all onboard one satellite. It does so by managing bus resource allocation, scheduling
+                                payload operations, handling command and data, all while providing customers access to their payloads in real-time. The PICU
+                                is implemented as a cluster of distributed nodes, allowing for redundancy as well as load balancing for more demanding
+                                computation.
+
+                                <br><br> As a senior developer on the PICU software team, I designed/implemented many of the critical functionalities of the PICU, 
+                                such as the hearbeat/state of health broadcasting system, the CCSDS Space Packet communications stack, the time synchronization
+                                mechanisms (utilizing pulse per second hardware), and more. I also wrote and maintained a scripting suite in python to enable
+                                the scalable configuration and generation of missions in arbitrary setups (the cluster of distributed nodes changes between 
+                                missions). 
                                 
+                                <br><br> I also designed and developed an open source message-oriented middleware to replace the proprietary (and difficult to use)
+                                framework that had originally been used for the PICU. This middleware was built off of ZMQ, and enabled users to create arbitrary
+                                and scalable mesh networks of peers. Peers can then communicate with each other using three messaging patterns: Pub/Sub, 
+                                Request/Reply, and Push/Pull. The project is called the 
+                                <u><a href="https://github.com/adam-stamand/dpn" target="_blank">Distributed Peer Network.</a></u>
                             </p>
                         </div>
                     
                         <ul class="col-list">
-                            <li><b>Designed</b> </li>
+                            <li><b>Designed</b> and developed core flight software features, such as Time Synchronization, State of Health, and the Communications 
+                                Stack.
+                            </li>
+                            <li><b>Wrote</b> scripting suite in python to enable scalable configuration and generation of software deployments. The suite supported
+                                generation, building, executing, deploying, and releasing software.
+                            </li>
+                            <li><b>Designed </b> a Message-Oriented Middleware using ZMQ in C++14 with 
+                                support for various patterns such as Pub/Sub, RPC, and Reply/Request, 
+                                allowing developers to rapidly develop and test flight software.
+                            </li>
                         </ul>
                     
                         <div class="col-tags">
@@ -726,7 +752,7 @@ permalink: /resume/
     var myFullpage = new fullpage('#fullpage', {
         menu: '#menu',
         anchors: ['Statement', 'Education', 'Experience', 'Skills'],
-        sectionsColor: ['#ebeae8','#f5f4f3', '#ebeae8', '#f5f4f3'],
+        sectionsColor: ['#00000000','#dbd5cc', '#ece9e3', '#dbd5cc'],
         autoScrolling: false,   
         licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
         paddingBottom: 0,
