@@ -6,6 +6,9 @@ gem "jekyll", "~> 3.8.5"
 # Select Theme
 gem "minima", "~> 2.0"
 
+gem "html-proofer"
+gem "sass"
+
 # Plugins
 group :jekyll_plugins do
   gem "jekyll-github-metadata"
@@ -16,8 +19,6 @@ group :jekyll_plugins do
   gem 'jekyll-paginate'
   gem 'github-pages'
   gem "jekyll-feed", "~> 0.6"
-  gem "html-proofer"
-  gem "sass"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
