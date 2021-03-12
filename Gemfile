@@ -8,6 +8,7 @@ gem "minima"
 
 gem "html-proofer"
 gem "sass"
+gem 'github-pages', '~> 212'
 
 # Plugins
 group :jekyll_plugins do
@@ -17,7 +18,6 @@ group :jekyll_plugins do
   gem 'rake'
   gem 'jekyll-sitemap'
   gem 'jekyll-paginate'
-  gem 'github-pages'
   gem "jekyll-feed"
 end
 
