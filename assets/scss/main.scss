@@ -123,13 +123,11 @@ body {
           color: #383737;
           text-decoration: none;
           display:block;
-          // background-color: #2e2e2e00;
           margin: 0 1rem 0 1rem;
           opacity: .6;
           transition: 0.35s;
       }
       a:hover{
-      //   background-color: #2e2e2e8e;
           color: #ece9e3;
           opacity: 1;
           
@@ -153,3 +151,9 @@ body {
 @import 'parts/page';
 
 @import 'parts/projects';
+
+@import 'parts/img';
+
+@import 'parts/menu';
+
+@import 'parts/general';
