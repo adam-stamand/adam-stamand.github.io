@@ -1,10 +1,8 @@
-// @import 'tools/normalize';
-@import 'tools/_animate';
+---
+---
+
+@import '_animate';
 @import '_variables';
-
-
-
-
 @import url('https://fonts.googleapis.com/css?family=Rubik:400,500,700,900');
 
 
@@ -140,20 +138,20 @@ body {
 
 
 // - - - - - - - - - - Header Styles - - - - - - - - - - //
-@import 'parts/header';
+@import 'header';
 
-@import 'parts/social';
+@import 'social';
 
-@import 'parts/top-page';
+@import 'top-page';
 
-@import 'parts/resume';
+@import 'resume';
 
-@import 'parts/page';
+@import 'page';
 
-@import 'parts/projects';
+@import 'projects';
 
-@import 'parts/img';
+@import 'img';
 
-@import 'parts/menu';
+@import 'menu';
 
-@import 'parts/general';
+@import 'general';

@@ -24,8 +24,7 @@ plugins:
   - jekyll-octicons
   - jemoji
   - jekyll-github-metadata
-
-
+  
 collections:
   interests:
     output: true
