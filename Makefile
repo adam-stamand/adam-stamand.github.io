@@ -8,7 +8,7 @@ build:
 	sass --update assets/scss/:assets/css/
 	bundle exec jekyll build
 
-serve:
+serve: build
 	bundle exec jekyll serve
 
 check:
