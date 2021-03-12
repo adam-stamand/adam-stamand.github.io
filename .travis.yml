@@ -10,29 +10,28 @@ notifications:
     on_success: never
     on_failure: change
 
-before_script:
- - make config
-
-# Overwrite install to prevent travis from running bundler
-# (so that gems get installed into normal location. This
-# allos 'sass' to be used on command line)
-install:
-  - ls # No op
-
 script: 
-  - make config
   - make build
   - make check
+
 
 addons:
   apt:
     packages:
     - libcurl4-openssl-dev
 
+before_deploy:
+  - mkdir ./docs
+  - cp -r ./_site ./docs 
+	- touch ./docs/.nojekyll
+  on:
+    tags: true
+
 deploy:
   provider: pages
   skip_cleanup: true
   github_token: $GH_PAGES_DEPLOY  # Set in the settings page of your repository, as a secure variable
   keep_history: false
+  local_dir: ./docs
   on:
-    branch: master
+    tags: true

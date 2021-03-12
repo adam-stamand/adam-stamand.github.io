@@ -6,7 +6,6 @@ config:
 
 build:
 	bundle exec jekyll build
-	# sass --update assets/scss/:assets/css/
 
 serve: build
 	bundle exec jekyll serve

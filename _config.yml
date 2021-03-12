@@ -24,22 +24,17 @@ plugins:
   - jekyll-octicons
   - jemoji
   - jekyll-github-metadata
-  
+
 collections:
   interests:
     output: true
 
 projects:
   sort_by: pushed
-  # sort_by options:
-  #   - pushed
-  #   - stars
   limit: 9
   exclude:
     archived: false
     forks: true
-    projects:
-    # - repo-name
 
 
 include: [_pages]
