@@ -24,7 +24,7 @@ addons:
 
 before_deploy:
   - mkdir ./docs
-  - cp -r ./_site ./docs
+  - cp -r ./_site/. ./docs/
   - touch ./docs/.nojekyll
 
 deploy:
