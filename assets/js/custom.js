@@ -61,3 +61,13 @@ AOS.init({
 
 }());
 
+document.addEventListener('DOMContentLoaded', () => {
+  document.addEventListener('scroll', () => {
+      const scrollIndicator = document.querySelector('.scroll-indicator');
+      if (window.scrollY === 0) {
+          scrollIndicator.classList.remove('hidden');
+      } else {
+          scrollIndicator.classList.add('hidden');
+      }
+  });
+});
